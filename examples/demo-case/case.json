@@ -1,0 +1,14 @@
+{
+  "case_id": "demo-statistics-reporting-01",
+  "output_contract": {
+    "issues": "array",
+    "summary": "object",
+    "verdict": "string"
+  },
+  "manuscript": {
+    "Abstract": "Among 120 patients, the exercise intervention lowered the primary symptom score compared with controls (p<0.05).",
+    "Methods": "We randomised 96 patients to the exercise intervention or to usual care. Allocation details were not described. The primary symptom score was compared between arms with a t test.",
+    "Results": "The exercise intervention significantly improved the primary symptom score (p<0.05).",
+    "Conclusion": "Structured exercise lowers symptom scores in patients with chronic fatigue."
+  }
+}
