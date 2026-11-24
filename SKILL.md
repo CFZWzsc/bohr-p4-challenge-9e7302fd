@@ -13,6 +13,20 @@ description: Use when a manuscript's methods and statistics must be reviewed for
 
 **不适用**：重算统计量、判断具体检验是否最优、替代统计学家复核、访问原始数据或代码。
 
+## Quickstart
+
+包内自带一个合成演示案例，可直接跑通：
+
+```powershell
+python scripts/run_skill.py --case examples/demo-case/case.json --out "$env:TEMP\demo_9e7302fd\result.json" --work "$env:TEMP\demo_9e7302fd\work"
+```
+
+- 演示输入：`examples/demo-case/case.json`，4 章节合成稿件（11 项统计报告检查里 6 项未报告；摘要 120 例与方法 96 例不一致）。
+- 输出：`$env:TEMP\demo_9e7302fd\result.json`，`status=success`，10 条 findings（2 high / 7 medium / 1 low），`verdict.decision=major_revision`。
+- `output_contract` 的 `issues`、`summary`、`verdict` 三个键均非空；同一输入连续两次运行的 result.json 字节一致。
+
+> 案例文本为合成内容，不代表任何真实论文或官方评测数据。
+
 ## 输入
 
 | 输入 | 说明 |
